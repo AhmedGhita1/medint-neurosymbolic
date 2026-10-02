@@ -4,10 +4,10 @@ import json
 
 from rdflib import Graph
 
-from scenome.config import FIXTURE_DIR, QUERY_DIR, SHAPES_PATH
-from scenome.models import HorusScene
-from scenome.ontology import OntologyVocabulary
-from scenome.semantic import (
+from medint_neurosymbolic.config import FIXTURE_DIR, QUERY_DIR, SHAPES_PATH
+from medint_neurosymbolic.models import HorusScene
+from medint_neurosymbolic.ontology import OntologyVocabulary
+from medint_neurosymbolic.semantic import (
     SCENE,
     build_scene_graph,
     build_visualization_html,

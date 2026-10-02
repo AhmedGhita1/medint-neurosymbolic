@@ -4,10 +4,10 @@ from pathlib import Path
 
 import pytest
 
-from scenome.config import FIXTURE_DIR, ONTOLOGY_PATH
-from scenome.models import HorusScene
-from scenome.ontology import OntologyVocabulary, load_ontology
-from scenome.semantic import load_scene_fixture
+from medint_neurosymbolic.config import FIXTURE_DIR, ONTOLOGY_PATH
+from medint_neurosymbolic.models import HorusScene
+from medint_neurosymbolic.ontology import OntologyVocabulary, load_ontology
+from medint_neurosymbolic.semantic import load_scene_fixture
 
 
 @pytest.fixture(scope="session")

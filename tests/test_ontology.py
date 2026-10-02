@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from scenome.models import HorusScene, SceneInstance, SceneRelation
-from scenome.ontology import OntologyVocabulary, validate_scene
+from medint_neurosymbolic.models import HorusScene, SceneInstance, SceneRelation
+from medint_neurosymbolic.ontology import OntologyVocabulary, validate_scene
 
 EXPECTED_CLASSES = {
     "Action",

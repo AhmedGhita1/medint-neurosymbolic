@@ -10,7 +10,7 @@ from typing import Any
 
 import gradio as gr
 
-from scenome.config import (
+from medint_neurosymbolic.config import (
     CLIPS_DIR,
     FIXTURE_DIR,
     GRADIO_SERVER_NAME,
@@ -19,12 +19,12 @@ from scenome.config import (
     QUERY_DIR,
     SHAPES_PATH,
 )
-from scenome.extraction import extract_scene
-from scenome.models import HorusScene
-from scenome.ontology import OntologyVocabulary, load_ontology
-from scenome.perception import describe_video
-from scenome.rag import SceneRAG
-from scenome.semantic import (
+from medint_neurosymbolic.extraction import extract_scene
+from medint_neurosymbolic.models import HorusScene
+from medint_neurosymbolic.ontology import OntologyVocabulary, load_ontology
+from medint_neurosymbolic.perception import describe_video
+from medint_neurosymbolic.rag import SceneRAG
+from medint_neurosymbolic.semantic import (
     build_scene_graph,
     build_visualization_html,
     execute_select,
@@ -216,10 +216,10 @@ async def answer_question(
 def build_app() -> gr.Blocks:
     """Build the interface without loading models or launching a server."""
 
-    with gr.Blocks(title="Scenome") as demo:
+    with gr.Blocks(title="medint-neurosymbolic") as demo:
         scene_state = gr.State(value=None)
 
-        gr.Markdown("# Scenome")
+        gr.Markdown("# medint-neurosymbolic")
 
         with gr.Row():
             video = gr.Video(

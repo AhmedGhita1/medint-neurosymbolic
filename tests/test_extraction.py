@@ -4,10 +4,10 @@ import json
 
 import pytest
 
-from scenome.extraction import ExtractionError, build_extraction_prompt, extract_scene
-from scenome.models import HorusScene
-from scenome.ontology import OntologyVocabulary
-from scenome.qwen import get_qwen
+from medint_neurosymbolic.extraction import ExtractionError, build_extraction_prompt, extract_scene
+from medint_neurosymbolic.models import HorusScene
+from medint_neurosymbolic.ontology import OntologyVocabulary
+from medint_neurosymbolic.qwen import get_qwen
 
 
 def test_prompt_is_built_from_horus(vocabulary: OntologyVocabulary) -> None:

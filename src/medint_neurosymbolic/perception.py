@@ -1,8 +1,8 @@
-"""Local video perception for Scenome."""
+"""Local video perception for medint-neurosymbolic."""
 
 from __future__ import annotations
 
-from scenome.qwen import get_qwen
+from medint_neurosymbolic.qwen import get_qwen
 
 
 def describe_video(video_path: str) -> str:

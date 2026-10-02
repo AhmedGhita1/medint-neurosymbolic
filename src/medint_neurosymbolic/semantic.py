@@ -12,8 +12,8 @@ from pyvis.network import Network
 from rdflib import Graph, Literal, Namespace, URIRef
 from rdflib.namespace import DCTERMS, PROV, RDF, RDFS
 
-from scenome.models import HorusScene
-from scenome.ontology import OntologyVocabulary, ValidationIssue, validate_scene
+from medint_neurosymbolic.models import HorusScene
+from medint_neurosymbolic.ontology import OntologyVocabulary, ValidationIssue, validate_scene
 
 
 @dataclass(frozen=True)
@@ -53,7 +53,7 @@ CLASS_COLORS = {
     "Entity": "#475569",
     "Occurrent": "#be123c",
 }
-SCENE = Namespace("urn:scenome:scene:")
+SCENE = Namespace("urn:medint-neurosymbolic:scene:")
 
 
 def build_scene_graph(

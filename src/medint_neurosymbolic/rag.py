@@ -9,10 +9,10 @@ import threading
 from dataclasses import dataclass
 from typing import Any
 
-from scenome.config import EMBEDDING_MODEL_ID, QWEN_MODEL_ID
-from scenome.models import HorusScene
-from scenome.ontology import OntologyVocabulary, validate_scene
-from scenome.qwen import get_qwen
+from medint_neurosymbolic.config import EMBEDDING_MODEL_ID, QWEN_MODEL_ID
+from medint_neurosymbolic.models import HorusScene
+from medint_neurosymbolic.ontology import OntologyVocabulary, validate_scene
+from medint_neurosymbolic.qwen import get_qwen
 
 
 class RagUnavailable(RuntimeError):
@@ -200,7 +200,7 @@ class SceneRAG:
                 "LightRAG is not installed. Install the full project profile."
             ) from error
 
-        working_directory = tempfile.TemporaryDirectory(prefix="scenome-")
+        working_directory = tempfile.TemporaryDirectory(prefix="medint-neurosymbolic-")
         embeddings = EmbeddingFunc(
             embedding_dim=_MINILM.dimension,
             max_token_size=256,

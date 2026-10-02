@@ -1,8 +1,8 @@
-# Scenome
+# medint-neurosymbolic
 
 [![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-md.svg)](https://huggingface.co/spaces/AhmedGhita/scenome)
 
-Scenome turns a clinical-scene video into a validated, queryable
+medint-neurosymbolic turns a clinical-scene video into a validated, queryable
 knowledge graph using Vision-Language-Models (VLMs) and the HORUS ontology.
 
 This repository is an MVP demonstrating the integration of vision-language models with formal ontologies for structured scene understanding and knowledge representation in clinical environments.

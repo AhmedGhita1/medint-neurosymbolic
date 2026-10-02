@@ -4,10 +4,10 @@ import asyncio
 
 import pytest
 
-from scenome import rag as rag_module
-from scenome.models import HorusScene
-from scenome.ontology import OntologyVocabulary
-from scenome.rag import SceneRAG, scene_to_lightrag
+from medint_neurosymbolic import rag as rag_module
+from medint_neurosymbolic.models import HorusScene
+from medint_neurosymbolic.ontology import OntologyVocabulary
+from medint_neurosymbolic.rag import SceneRAG, scene_to_lightrag
 
 
 def test_validated_scene_becomes_custom_kg(

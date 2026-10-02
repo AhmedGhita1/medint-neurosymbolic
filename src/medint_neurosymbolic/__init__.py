@@ -1,7 +1,7 @@
 """Clinical scene extraction grounded in the HORUS ontology."""
 
-from scenome.models import HorusScene, SceneInstance, SceneRelation
-from scenome.ontology import OntologyVocabulary, load_ontology
+from medint_neurosymbolic.models import HorusScene, SceneInstance, SceneRelation
+from medint_neurosymbolic.ontology import OntologyVocabulary, load_ontology
 
 __all__ = [
     "HorusScene",
