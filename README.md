@@ -1,5 +1,7 @@
 # medint-neurosymbolic
 
+*Neurosymbolic Medical Intelligence: vision-language perception validated against a clinical ontology*
+
 [![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-md.svg)](https://huggingface.co/spaces/AhmedGhita/scenome)
 
 medint-neurosymbolic turns a clinical-scene video into a validated, queryable
